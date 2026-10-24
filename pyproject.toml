@@ -1,0 +1,21 @@
+[project]
+name = "aisupport"
+version = "0.1.0"
+description = "Deterministic + Local LLM customer support framework with zero-VRAM idle and HITL silence"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["aisupport"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
